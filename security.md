@@ -25,17 +25,12 @@ Although the repository contains coursework and not production systems, risks ma
 
 ### Branch Protection Rules
 
-The default branch is protected with the following rules:
+The default branch is protected with the following ruleset:
 
-- Prevention of branch deletion  
-- Prevention of non-fast-forward pushes  
-- Pull requests required for changes  
-- Code owner review required  
-
-These controls reduce the likelihood of:
-- Accidental destructive changes  
-- Unauthorized direct commits  
-- Unreviewed modifications  
+- Require a pull request before merging
+- Require review from Code Owners
+- Block force pushes
+- Restrict deletions  
 
 ### CODEOWNERS Enforcement
 
@@ -61,9 +56,3 @@ This repository:
 - Does not store regulated or confidential data  
 - Does not contain personal identifiable information (PII)  
 - Is limited to educational content  
-
-## Justification of Security Posture
-
-Because this repository is used for coursework and does not contain production systems or sensitive operational data, extensive enterprise-level security controls are not necessary.
-
-However, the implemented protections (branch rules, pull request requirements, and code owner review) provide reasonable safeguards appropriate to its academic purpose.
